@@ -17,9 +17,31 @@ function Home() {
 
           <button className={styles.createButton}>
             <span>Criar</span>
-            <PlusCircle size={20} weight="bold" />
+            <PlusCircle size={18} weight="bold" />
           </button>
         </form>
+
+        <div className={styles.content}>
+          <div className={styles.totals}>
+            <div className={styles.total}>
+              <strong>Tarefas criadas</strong>
+              <div className={styles.badge}>0</div>
+            </div>
+
+            <div className={styles.total}>
+              <strong>Concluídas</strong>
+              <div className={styles.badge}>0</div>
+            </div>
+          </div>
+
+          <div className={styles.tasks}>
+            <div className={styles.empty}>
+              <img src="./src/empty-icon.png" />
+              <p>Você ainda não tem tarefas cadastradas</p>
+              <p>Crie tarefas e organize seus itens a fazer</p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

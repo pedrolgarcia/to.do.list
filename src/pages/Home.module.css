@@ -1,7 +1,7 @@
 .wrapper {
-  max-width: 738px;
-  padding: 0 20px;
-  margin: auto;
+  max-width: 48rem;
+  margin: -1.7rem auto 2rem auto;
+  padding: 0 1rem;
 }
 
 .form {
@@ -18,17 +18,19 @@
   border-radius: 8px;
   border: 1px solid var(--gray-700);
   padding: 1rem;
+  font-size: 16px;
 }
 
 .input:focus {
   box-shadow: none;
-  outline: 1px solid var(--purple-500);
+  border: 1px solid var(--purple-500);
 }
 
 .createButton {
   background-color: var(--blue-500);
   color: var(--gray-100);
   font-weight: 700;
+  font-size: 14px;
 
   border-radius: 8px;
   border: 0;
@@ -40,13 +42,48 @@
 
   cursor: pointer;
 
-  transition: background-color 0.3s;
+  transition: background-color 0.2s;
 }
 
 .createButton:hover {
   background-color: var(--blue-300);
 }
 
+.createButton:focus {
+  box-shadow: 0 0 0 2px var(--blue-300);
+}
+
 .createButton > span {
   margin-right: 5px;
+}
+
+.content {
+  margin-top: 4rem;
+}
+
+.totals {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+}
+
+.total > strong {
+  margin-right: 10px;
+}
+
+.badge {
+  background-color: var(--gray-400);
+  padding: 2px 8px;
+  border-radius: 50%;
+}
+
+.tasks {
+}
+
+.empty {
 }
